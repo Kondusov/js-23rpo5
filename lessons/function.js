@@ -1,3 +1,4 @@
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function
 function summ(a,b){
     //if(a!= undefined && b!=undefined){
     if(a && b){
