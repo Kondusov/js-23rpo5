@@ -1,0 +1,2 @@
+Руководство по JavaScript
+https://developer.mozilla.org/ru/docs/Web/JavaScript
