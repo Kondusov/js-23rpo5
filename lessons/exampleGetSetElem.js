@@ -1,0 +1,14 @@
+let h1classAtr2 = document.getElementsByClassName('second-h1');
+        let h1classAtr = document.querySelector('.second-h1');
+        let h1 = document.querySelector('h1').textContent;
+        let h1v2 = document.querySelectorAll('h1');
+        let h2id = document.getElementById('h2-id').textContent;
+        let h2idObject = document.getElementById('h2-id');
+        console.log(h1);
+        console.log(h1v2);
+        console.log(h1v2[0].textContent);
+        console.log(h2id);
+        console.log(h1classAtr2[0]);
+        h1classAtr2[0].textContent = 'Теперь все иначе в h1';
+        h1classAtr2[0].style.cssText = 'color: blue';
+        h2idObject.style.color = 'green';
