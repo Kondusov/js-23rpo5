@@ -9,7 +9,10 @@
             
         });
         p = document.getElementById('data-form');
+        let result = '';
         for(let i = 0; i < localStorage.length; i++){
         let item = localStorage.key(i);
-            p.append(localStorage.getItem(item));
+            result += '<p>'+localStorage.getItem(item)+
+            `<button onclick="localStorage.removeItem('${localStorage.key(i)}')">Удалить</button></p>`;
         }
+        p.innerHTML = result;
