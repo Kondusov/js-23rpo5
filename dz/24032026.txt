@@ -1,0 +1,2 @@
+Решите любую из первых пяти задач (примерыЗаданий.txt).
+https://github.com/Kondusov/js-23rpo5/tree/main/exam
