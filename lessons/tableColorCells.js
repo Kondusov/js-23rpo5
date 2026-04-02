@@ -1,20 +1,18 @@
-let table = document.getElementById("table-red"); // Получили таблицу
-let button = document.getElementById("color"); // Получили кнопку
+const table = document.getElementById('table');
+  const btn = document.getElementById('btn');
 
-let cells = table.querySelectorAll("td"); // Массив ячеек
-for (let i = 0; i < cells.length; i++) {
-    cells[i].setAttribute("id", i);
-}
-let copyCells = [...cells];
-button.addEventListener('click', ()=>{
-    if (copyCells.length == 0) {
-        console.log("Ячейки все закрашены");
+  const cells = Array.from(table.querySelectorAll('td')); // все td
+  let copyCells = [...cells]; // список ещё не покрашенных (делаем копию для безопасности)
+
+  btn.addEventListener('click', () => {
+    if (copyCells.length === 0) {
+      console.log('Все ячейки уже покрашены.');
+      return;
     }
-    let randomId = Math.floor(Math.random() * copyCells.length); // Рандомный выбор ячейки
-    for (let i = 0; i < cells.length; i++) {
-        if (cells[i].id === copyCells[randomId].id) {
-            cells[i].style.backgroundColor = "red";
-            copyCells.splice(randomId, 1);
-        }
-    }
-});
+    const index = Math.floor(Math.random() * copyCells.length);
+    const cell = copyCells[index];
+
+    cell.style.backgroundColor = 'red';
+    copyCells.splice(index, 1);
+    console.log(copyCells);
+  });

@@ -36,8 +36,6 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript
 Условные выражения
 Циклы (Loops)
 Функции (в том числе и стрелочные)
-Объекты в JavaScript
-Классы в JavaScript (конструктор, наследование, приватность методов, super, this, static)
 session storage или local storage (различие, методы)
 работа с JSON
 асинхронность (Promises, async/await)
@@ -89,13 +87,11 @@ DOM-манипуляции.
 Объявление переменных: const (основная), let (если нужно менять значение).
 Стрелочные функции: () => {}.
 Шаблонные строки: `Строка ${variable}`.
-Деструктуризация массивов и объектов: { name } = user.
 Работа с данными:
 Типы данных: Строки, числа, булевы значения, массивы [] и объекты {}.
-JSON: методы JSON.stringify() и JSON.parse() (критично для API).
-Методы массивов: .map(), .filter(), .forEach().
+JSON: методы JSON.stringify() и JSON.parse().
+Методы массивов: .map(), .filter(), .forEach()., includes()
 Асинхронность :
-Promise: понимание then()/catch().
 async/await: современный способ работы с запросами.
 fetch(): отправка и получение HTTP-запросов.
 DOM (для отображения результатов API):

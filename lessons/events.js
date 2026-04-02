@@ -13,3 +13,6 @@ let div1 = document.getElementById('div1');
 div1.addEventListener('mouseenter', (e) => {
         div1.textContent = 'Курсор пришел на  элемент'+` X: ${e.clientX}, Y: ${e.clientY}`;
     });
+document.addEventListener('keypress',(e)=>{
+  console.log(e.key);
+})
